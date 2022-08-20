@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .vertical {
+    writing-mode: vertical-rl;
+  }
+  .preview {
+    -webkit-text-combine: horizontal;
+    text-combine: horizontal;
+    -ms-text-combine-horizontal: all;
+    text-combine-horizontal: digit 2;
+    text-combine-upright: digit 2;
+  }
+  .linenum {
+    counter-reset: line-number;
+
+    p {
+      counter-increment: line-number;
+      position: relative;
+      /* needed for <span> */
+      /*display: inline-block;*/
+    }
+
+    p::before {
+      /*display: inline-block;*/
+      position: absolute;
+      /* since webkit doesn't support upright number,
+         currently we don't use upright line numbers */
+      /* text-combine-upright: all;*/
+      /* transform: rotate(-90deg);*/
+      content: counter(line-number);
+      color: #aaa;
+      top: -3em;
+      right: -0.1em;
+    }
+  }
+
+  /* Edge (Chromium) scrollbar is shit */
+
+  .scrollbar::-webkit-scrollbar {
+    @supports (-ms-ime-align: auto) {
+      height: 0.4em;
+    }
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    @supports (-ms-ime-align: auto) {
+      border-radius: 0.2em;
+      box-shadow: inset 0 0 0.1em 0.1em #999;
+      border: solid 0.1em transparent;
+    }
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    @supports (-ms-ime-align: auto) {
+      background-color: #909090;
+    }
+  }
+}
+
+html {
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: "novel";
+  src: url("./assets/font/novel-regular.woff2") format("woff2");
+}

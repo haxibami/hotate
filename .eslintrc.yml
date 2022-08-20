@@ -1,0 +1,56 @@
+env:
+  browser: true
+  es2021: true
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+  - plugin:@typescript-eslint/recommended
+  - prettier
+parser: "@typescript-eslint/parser"
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: latest
+  sourceType: module
+plugins:
+  - react
+  - "@typescript-eslint"
+  - import
+rules:
+  "import/order":
+    - warn
+    - groups:
+        - builtin
+        - external
+        - internal
+        - parent
+        - sibling
+        - index
+        - object
+        - type
+      pathGroups:
+        - pattern: "{tauri,@tauri-apps/**}"
+          group: builtin
+          position: after
+        - pattern: "{react,react-dom/**,react-router-dom}"
+          group: builtin
+          position: after
+        - pattern: "{daisyui,react-daisyui}"
+          group: builtin
+          position: after
+        - pattern: "{lexical,@lexical/**}"
+          group: builtin
+          position: after
+        - pattern: "{recoil}"
+          group: builtin
+          position: after
+      pathGroupsExcludedImportTypes:
+        - builtin
+      alphabetize:
+        order: asc
+      newlines-between: always
+  "@typescript-eslint/consistent-type-imports":
+    - warn
+    - prefer: type-imports
+  react/jsx-uses-react: "off"
+  react/react-in-jsx-scope: "off"
