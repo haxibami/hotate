@@ -73,6 +73,7 @@ export const isReadOnlyState = atom({
 export const fontSizeState = atom({
   key: "config/font-size",
   default: 1,
+  effects: [tauriStoreEffect("font-size")],
 });
 
 export const lineWordsState = atom({

@@ -12,18 +12,8 @@ import Editor from "./components/Editor";
 import Setting from "./components/Setting";
 import TextModal from "./components/TextModal";
 import { $setTextContent } from "./lib/fs";
+import { useData } from "./lib/suspense";
 import { isDrawerOpenState, targetFileState } from "./store";
-
-const dataMap: Map<string, unknown> = new Map();
-
-// TODO: fix data management
-function useData<T>(cacheKey: string, fetch: () => Promise<T>): T {
-  const cachedData = dataMap.get(cacheKey) as T | undefined;
-  if (cachedData === undefined) {
-    throw fetch().then((d) => dataMap.set(cacheKey, d));
-  }
-  return cachedData;
-}
 
 function App() {
   const [isDrawerOpen, setIsDrawerOpen] = useRecoilState(isDrawerOpenState);
@@ -33,7 +23,15 @@ function App() {
     console.error(error);
   };
 
-  const text = useData(targetFile, () => readTextFile(targetFile));
+  const loadContent = () => {
+    if (targetFile !== "") {
+      return readTextFile(targetFile);
+    } else {
+      return Promise.resolve("");
+    }
+  };
+
+  const text = useData(targetFile, loadContent);
 
   return (
     <div className="App">
@@ -54,7 +52,6 @@ function App() {
             {/*
             TODO: fix modal related issue
             */}
-            <TextModal />
           </div>
         </Drawer>
       </LexicalComposer>

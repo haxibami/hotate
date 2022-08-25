@@ -24,10 +24,9 @@ specifiers:
   prettier: ^2.7.1
   prettier-plugin-tailwindcss: ^0.1.13
   react: ^18.2.0
-  react-daisyui: ^2.2.0
+  react-daisyui: ^2.3.2
   react-dom: ^18.2.0
   recoil: ^0.7.4
-  simplebar-react: ^2.4.1
   tailwindcss: ^3.1.8
   tauri-plugin-store-api: github:tauri-apps/tauri-plugin-store#dev
   typescript: ^4.6.4
@@ -42,7 +41,6 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   recoil: 0.7.4_biqbaboplfbrettd7655fr4n2y
-  simplebar-react: 2.4.1_biqbaboplfbrettd7655fr4n2y
   tauri-plugin-store-api: github.com/tauri-apps/tauri-plugin-store/67530781d86b73fae4ee03c17f43c76f09ae3400
 
 devDependencies:
@@ -63,7 +61,7 @@ devDependencies:
   postcss: 8.4.16
   prettier: 2.7.1
   prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
-  react-daisyui: 2.2.0_f6qhuuoh2pkybuyfxegikx3xz4
+  react-daisyui: 2.3.2_f6qhuuoh2pkybuyfxegikx3xz4
   tailwindcss: 3.1.8
   typescript: 4.7.4
   vite: 3.0.4
@@ -419,10 +417,6 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
-
-  /@juggle/resize-observer/3.3.1:
-    resolution: {integrity: sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw==}
-    dev: false
 
   /@lexical/clipboard/0.3.11_lexical@0.3.11:
     resolution: {integrity: sha512-ly+9R2Rccz80eV9Gu0hOi701fXIyU50t+S7OR0Ensos09oAmQPae6poFkvS3k36tH+leLgk0hRZ47pB/+ejENA==}
@@ -1137,10 +1131,6 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /can-use-dom/0.1.0:
-    resolution: {integrity: sha512-ceOhN1DL7Y4O6M0j9ICgmTYziV89WMd96SvSl0REd8PMgrY0B/WBOPoed5S1KUmJqXgUXh8gzSe6E3ae27upsQ==}
-    dev: false
-
   /caniuse-lite/1.0.30001374:
     resolution: {integrity: sha512-mWvzatRx3w+j5wx/mpFN5v5twlPrabG8NqX2c6e45LCpymdoGqNvRkRutFUqpRTXKFQFNQJasvK0YT7suW6/Hw==}
     dev: true
@@ -1222,11 +1212,6 @@ packages:
     dependencies:
       safe-buffer: 5.1.2
     dev: true
-
-  /core-js/3.24.1:
-    resolution: {integrity: sha512-0QTBSYSUZ6Gq21utGzkfITDylE8jWC9Ne1D2MrhvlsZBI1x39OdDIVbzSqtgMndIy6BlHxBXpMGqzZmnztg2rg==}
-    requiresBuild: true
-    dev: false
 
   /cross-spawn/7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
@@ -2297,25 +2282,13 @@ packages:
     resolution: {integrity: sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==}
     dev: true
 
-  /lodash.debounce/4.0.8:
-    resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
-    dev: false
-
   /lodash.isplainobject/4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
     dev: true
 
-  /lodash.memoize/4.1.2:
-    resolution: {integrity: sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag==}
-    dev: false
-
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
-
-  /lodash.throttle/4.1.1:
-    resolution: {integrity: sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==}
-    dev: false
 
   /loose-envify/1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
@@ -2395,6 +2368,7 @@ packages:
   /object-assign/4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
     engines: {node: '>=0.10.0'}
+    dev: true
 
   /object-hash/3.0.0:
     resolution: {integrity: sha512-RSn9F68PjH9HqtltsSnqYC1XXoWe9Bju5+213R98cNGttag9q9yAOTzdbsqvIa7aNm5WffBZFpWYr2aWrklWAw==}
@@ -2632,6 +2606,7 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
+    dev: true
 
   /punycode/2.1.1:
     resolution: {integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==}
@@ -2647,10 +2622,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /react-daisyui/2.2.0_f6qhuuoh2pkybuyfxegikx3xz4:
-    resolution: {integrity: sha512-qqSw8LJKdCrhGXccib3AnVkuET1B3hi1oQwi84qwGlcerNDAJSEuIegCq01CdpxPWJrcj7+PSdsFOXctgfVMFQ==}
+  /react-daisyui/2.3.2_f6qhuuoh2pkybuyfxegikx3xz4:
+    resolution: {integrity: sha512-mX2zGWN59HLxFZ1hsgQRMw+84cug122hzU8mqvor5U9aZGvWDypz5ZcGg7CaYNM3jjzxVtzUhWrUw4ezZaB8hQ==}
     peerDependencies:
-      daisyui: ^2.19.0
+      daisyui: ^2.24.0
       react: '>=16'
       react-dom: '>=16'
       tailwindcss: ^3.0.23
@@ -2672,6 +2647,7 @@ packages:
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: true
 
   /react-refresh/0.14.0:
     resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
@@ -2824,29 +2800,6 @@ packages:
     dependencies:
       is-arrayish: 0.3.2
     dev: true
-
-  /simplebar-react/2.4.1_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-lw0ZPj+80ez2mh1YTOligFUNzDch2sUbOzDp4WUhU5SpS+qMiyyOzNfMbHa0l4FyWox+tnGNO7jybxqIda3roQ==}
-    peerDependencies:
-      react: ^0.14.9 || ^15.3.0 || ^16.0.0-rc || ^16.0 || ^17.0 || ^18.0.0
-      react-dom: ^0.14.9 || ^15.3.0 || ^16.0.0-rc || ^16.0 || ^17.0 || ^18.0.0
-    dependencies:
-      prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      simplebar: 5.3.8
-    dev: false
-
-  /simplebar/5.3.8:
-    resolution: {integrity: sha512-LOHjyOcihx++zFN+vuktoZBGpCarFCtHIVDWXOf2VELbGDknq3Hw/sddafRp1aCg123VNkHWOFHUDHYEXAtufQ==}
-    dependencies:
-      '@juggle/resize-observer': 3.3.1
-      can-use-dom: 0.1.0
-      core-js: 3.24.1
-      lodash.debounce: 4.0.8
-      lodash.memoize: 4.1.2
-      lodash.throttle: 4.1.1
-    dev: false
 
   /slash/3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}

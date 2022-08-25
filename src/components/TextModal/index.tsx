@@ -1,28 +1,23 @@
+import type { FC, ReactNode } from "react";
+
 import { Modal, Button } from "react-daisyui";
-
-import { useRecoilState } from "recoil";
-
-import { isModalOpenState } from "../../store";
 
 interface Props {
   header: string;
-  body: string;
-  actions: React.ReactNode;
+  body: ReactNode;
+  open: boolean;
+  onClick: () => void;
 }
 
-const TextModal = () => {
-  const [isModalOpen, setIsModalOpen] = useRecoilState(isModalOpenState);
-  const toggleModalOpen = () => {
-    setIsModalOpen(!isModalOpen);
-  };
+const TextModal: FC<Props> = ({ header, body, open, onClick }) => {
   return (
-    <Modal open={isModalOpen} className="rounded">
-      <Modal.Header className="font-bold">Hotate editor</Modal.Header>
+    <Modal open={open} className="w-full max-w-md rounded">
+      <Modal.Header className="font-bold">{header}</Modal.Header>
 
-      <Modal.Body>Some info</Modal.Body>
+      <Modal.Body>{body}</Modal.Body>
 
       <Modal.Actions>
-        <Button onClick={toggleModalOpen} size="sm">
+        <Button onClick={onClick} size="sm">
           OK
         </Button>
       </Modal.Actions>
