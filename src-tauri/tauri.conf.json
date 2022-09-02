@@ -21,8 +21,8 @@
     },
     "bundle": {
       "active": true,
-      "category": "DeveloperTool",
-      "copyright": "",
+      "category": "Productivity",
+      "copyright": "Copyright © 2022 haxibami (haxibami.net)",
       "deb": {
         "depends": []
       },
@@ -34,8 +34,8 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.haxibami.hotate",
-      "longDescription": "",
+      "identifier": "net.haxibami.hotate",
+      "longDescription": "A vertical-writing editor",
       "macOS": {
         "entitlements": null,
         "exceptionDomain": "",
@@ -61,10 +61,8 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
         "resizable": true,
-        "title": "Hotate",
-        "width": 800
+        "title": "Hotate"
       }
     ]
   }

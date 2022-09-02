@@ -1,11 +1,11 @@
 [package]
-name = "app"
+name = "hotate"
 version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
-license = ""
-repository = ""
-default-run = "app"
+description = "A vertical-writing editor"
+authors = ["haxibami"]
+license = "MIT"
+repository = "https://github.com/haxibami/hotate"
+default-run = "hotate"
 edition = "2021"
 rust-version = "1.57"
 

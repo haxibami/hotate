@@ -78,7 +78,7 @@ export const fontSizeState = atom({
 
 export const lineWordsState = atom({
   key: "config/line-words",
-  default: 38,
+  default: 30,
   effects: [tauriStoreEffect("line-words")],
 });
 

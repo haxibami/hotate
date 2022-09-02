@@ -92,8 +92,8 @@ const Setting = () => {
           </div>
           <div className=" tooltip tooltip-open" data-tip={lineWords}>
             <Range
-              min={25}
-              max={50}
+              min={20}
+              max={40}
               type="range"
               value={lineWords}
               size="xs"

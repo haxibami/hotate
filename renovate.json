@@ -1,0 +1,61 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":timezone(Asia/Tokyo)"
+  ],
+  "schedule": [
+    "after 9am on monday",
+    "before 12am on monday"
+  ],
+  "dependencyDashboard": true,
+  "ignoreDeps": [],
+  "packageRules": [
+    {
+      "groupName": "tauri",
+      "matchPackagePatterns": [
+        "^@tauri-apps",
+        "^tauri-plugin"
+      ],
+      "automerge": false
+    },
+    {
+      "groupName": "react",
+      "matchPackagePatterns": [
+        "react",
+        "react-dom",
+        "@types/react",
+        "@types/react-dom"
+      ],
+      "automerge": false
+    },
+    {
+      "groupName": "lexical",
+      "matchPackagePatterns": [
+        "^lexical",
+        "^@lexical"
+      ],
+      "automerge": false
+    },
+    {
+      "groupName": "devDependencies",
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "automerge": true
+    },
+    {
+      "groupName": "dependencies (minor update)",
+      "matchDepTypes": [
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true
+    }
+  ]
+}
