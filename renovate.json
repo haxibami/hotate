@@ -12,6 +12,14 @@
   "ignoreDeps": [],
   "packageRules": [
     {
+      "groupName": "tauri-backend",
+      "paths": [
+        "src-tauri/**"
+      ],
+      "groupSlug": "allTauriBackend",
+      "automerge": false
+    },
+    {
       "groupName": "tauri",
       "matchPackagePatterns": [
         "^@tauri-apps",
