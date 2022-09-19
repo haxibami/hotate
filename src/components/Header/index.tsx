@@ -28,19 +28,19 @@ import { askandSave, askAndOpen, silentSave } from "../../lib/fs";
 import {
   isDrawerOpenState,
   targetFileState,
-  // isReadOnlyState,
+  // isEditableState,
 } from "../../store";
 
 const Header: FC = () => {
   const [editor] = useLexicalComposerContext();
   const [isDrawerOpen, setIsDrawerOpen] = useRecoilState(isDrawerOpenState);
-  // const [isReadOnly, setIsReadOnly] = useRecoilState(isReadOnlyState);
+  // const [isEditable, setIsEditable] = useRecoilState(isEditableState);
   const [targetFile, setTargetFile] = useRecoilState(targetFileState);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
 
-  const handleReadOnly = () => {
-    editor.isReadOnly() ? editor.setReadOnly(false) : editor.setReadOnly(true);
-    // setIsReadOnly(!isReadOnly);
+  const handleEditable = () => {
+    editor.isEditable() ? editor.setEditable(false) : editor.setEditable(true);
+    // setIsEditable(!isEditable);
   };
 
   const handleOpen = async () => {
@@ -220,7 +220,7 @@ const Header: FC = () => {
               rotate={true}
               offElement={<Svg.Pen className="h-5 w-5 fill-current" />}
               onElement={<Svg.EyeOpen className="h-5 w-5 fill-current" />}
-              onChange={handleReadOnly}
+              onChange={handleEditable}
               className="h-8 w-8"
             />
           </div>

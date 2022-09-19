@@ -63,9 +63,9 @@ export const textLengthState = atom({
   default: 0,
 });
 
-export const isReadOnlyState = atom({
-  key: "editor/is-read-only",
-  default: false,
+export const isEditableState = atom({
+  key: "editor/is-editable",
+  default: true,
 });
 
 // UI

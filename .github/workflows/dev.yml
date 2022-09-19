@@ -2,7 +2,7 @@ name: "test-on-push"
 on:
   push:
     branches:
-      - main
+      - dev
 
 env:
   node-version: 16

@@ -24,7 +24,7 @@ import {
   fontSizeState,
   textLengthState,
   targetFileState,
-  // isReadOnlyState,
+  // isEditableState,
 } from "../../store";
 
 const Editor = () => {
@@ -48,7 +48,7 @@ const Editor = () => {
   const isLineNumOn = useRecoilValue(isLineNumOnState);
   const lineHeight = useRecoilValue(lineHeightState);
   const fontSize = useRecoilValue(fontSizeState);
-  // const isReadOnly = useRecoilValue(isReadOnlyState);
+  // const isEditable = useRecoilValue(isEditableState);
   const setTextLength = useSetRecoilState(textLengthState);
 
   useEffect(() => {
