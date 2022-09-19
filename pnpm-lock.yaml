@@ -1,11 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@lexical/react': ^0.3.11
-  '@lexical/selection': ^0.3.11
-  '@lexical/utils': ^0.3.11
+  '@lexical/react': 0.3.11
+  '@lexical/selection': 0.3.11
+  '@lexical/utils': 0.3.11
   '@tailwindcss/typography': ^0.5.4
-  '@tauri-apps/api': ^1.0.2
+  '@tauri-apps/api': 1.1.0
   '@tauri-apps/cli': ^1.0.5
   '@types/node': ^18.7.5
   '@types/react': ^18.0.15
@@ -19,14 +19,14 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   eslint-plugin-import: ^2.26.0
   eslint-plugin-react: ^7.30.1
-  lexical: ^0.3.11
+  lexical: 0.3.11
   postcss: ^8.4.16
   prettier: ^2.7.1
   prettier-plugin-tailwindcss: ^0.1.13
-  react: ^18.2.0
+  react: 18.2.0
   react-daisyui: ^2.3.2
-  react-dom: ^18.2.0
-  recoil: ^0.7.4
+  react-dom: 18.2.0
+  recoil: 0.7.5
   tailwindcss: ^3.1.8
   tauri-plugin-store-api: github:tauri-apps/tauri-plugin-store#dev
   typescript: ^4.6.4
@@ -36,12 +36,12 @@ dependencies:
   '@lexical/react': 0.3.11_obxcyd7u5y2wh77okpg5zi4x4a
   '@lexical/selection': 0.3.11_lexical@0.3.11
   '@lexical/utils': 0.3.11_lexical@0.3.11
-  '@tauri-apps/api': 1.0.2
+  '@tauri-apps/api': 1.1.0
   lexical: 0.3.11
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  recoil: 0.7.4_biqbaboplfbrettd7655fr4n2y
-  tauri-plugin-store-api: github.com/tauri-apps/tauri-plugin-store/67530781d86b73fae4ee03c17f43c76f09ae3400
+  recoil: 0.7.5_biqbaboplfbrettd7655fr4n2y
+  tauri-plugin-store-api: github.com/tauri-apps/tauri-plugin-store/d8efb964bb1894bdf01407693ee896d0f9c557b3
 
 devDependencies:
   '@tailwindcss/typography': 0.5.4_tailwindcss@3.1.8
@@ -62,7 +62,7 @@ devDependencies:
   prettier: 2.7.1
   prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
   react-daisyui: 2.3.2_f6qhuuoh2pkybuyfxegikx3xz4
-  tailwindcss: 3.1.8
+  tailwindcss: 3.1.8_postcss@8.4.16
   typescript: 4.7.4
   vite: 3.0.4
 
@@ -668,11 +668,11 @@ packages:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
-      tailwindcss: 3.1.8
+      tailwindcss: 3.1.8_postcss@8.4.16
     dev: true
 
-  /@tauri-apps/api/1.0.2:
-    resolution: {integrity: sha512-yuNW0oeJ1/ZA7wNF1KgxhHrSu5viPVzY/UgUczzN5ptLM8dH15Juy5rEGkoHfeXGju90Y/l22hi3BtIrp/za+w==}
+  /@tauri-apps/api/1.1.0:
+    resolution: {integrity: sha512-n13pIqdPd3KtaMmmAcrU7BTfdMtIlGNnfZD0dNX8L4p8dgmuNyikm6JAA+yCpl9gqq6I8x5cV2Y0muqdgD0cWw==}
     engines: {node: '>= 12.22.0', npm: '>= 6.6.0', yarn: '>= 1.19.1'}
     dev: false
 
@@ -1250,7 +1250,7 @@ packages:
       css-selector-tokenizer: 0.8.0
       postcss: 8.4.16
       postcss-js: 4.0.0_postcss@8.4.16
-      tailwindcss: 3.1.8
+      tailwindcss: 3.1.8_postcss@8.4.16
     transitivePeerDependencies:
       - ts-node
     dev: true
@@ -2633,7 +2633,7 @@ packages:
       daisyui: 2.24.0_25hquoklqeoqwmt7fwvvcyxm5e
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      tailwindcss: 3.1.8
+      tailwindcss: 3.1.8_postcss@8.4.16
     dev: true
 
   /react-dom/18.2.0_react@18.2.0:
@@ -2673,8 +2673,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /recoil/0.7.4_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-sCXvQGMfSprkNU4ZRkJV4B0qFQSURJMgsICqY1952WRlg66NMwYqi6n67vhnhn0qw4zHU1gHXJuMvRDaiRNFZw==}
+  /recoil/0.7.5_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-GVShsj5+M/2GULWBs5WBJGcsNis/d3YvDiaKjYh3mLKXftjtmk9kfaQ8jwjoIXySCwn8/RhgJ4Sshwgzj2UpFA==}
     peerDependencies:
       react: '>=16.13.1'
       react-dom: '*'
@@ -2880,10 +2880,12 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /tailwindcss/3.1.8:
+  /tailwindcss/3.1.8_postcss@8.4.16:
     resolution: {integrity: sha512-YSneUCZSFDYMwk+TGq8qYFdCA3yfBRdBlS7txSq0LUmzyeqRe3a8fBQzbz9M3WS/iFT4BNf/nmw9mEzrnSaC0g==}
     engines: {node: '>=12.13.0'}
     hasBin: true
+    peerDependencies:
+      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
@@ -3079,11 +3081,11 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/tauri-apps/tauri-plugin-store/67530781d86b73fae4ee03c17f43c76f09ae3400:
-    resolution: {tarball: https://codeload.github.com/tauri-apps/tauri-plugin-store/tar.gz/67530781d86b73fae4ee03c17f43c76f09ae3400}
+  github.com/tauri-apps/tauri-plugin-store/d8efb964bb1894bdf01407693ee896d0f9c557b3:
+    resolution: {tarball: https://codeload.github.com/tauri-apps/tauri-plugin-store/tar.gz/d8efb964bb1894bdf01407693ee896d0f9c557b3}
     name: tauri-plugin-store-api
     version: 0.1.0
     dependencies:
-      '@tauri-apps/api': 1.0.2
+      '@tauri-apps/api': 1.1.0
       tslib: 2.4.0
     dev: false

@@ -12,14 +12,14 @@
     "lint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
-    "@lexical/react": "^0.3.11",
-    "@lexical/selection": "^0.3.11",
-    "@lexical/utils": "^0.3.11",
-    "@tauri-apps/api": "^1.0.2",
-    "lexical": "^0.3.11",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "recoil": "^0.7.4",
+    "@lexical/react": "0.3.11",
+    "@lexical/selection": "0.3.11",
+    "@lexical/utils": "0.3.11",
+    "@tauri-apps/api": "1.1.0",
+    "lexical": "0.3.11",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "recoil": "0.7.5",
     "tauri-plugin-store-api": "github:tauri-apps/tauri-plugin-store#dev"
   },
   "devDependencies": {
