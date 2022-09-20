@@ -3,12 +3,9 @@ import type {
   GridSelection,
   PASTE_COMMAND,
   CommandPayloadType,
-  LexicalEditor} from "lexical";
-import {
-  $getSelection,
-  $isRangeSelection,
-  $isGridSelection
+  LexicalEditor,
 } from "lexical";
+import { $getSelection, $isRangeSelection, $isGridSelection } from "lexical";
 
 // All pasted text is treated as multi-line plain text
 function $insertDataTransferForNovelText(

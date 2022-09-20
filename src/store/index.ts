@@ -1,4 +1,4 @@
-import { atom, selector, DefaultValue } from "recoil";
+import { atom, DefaultValue } from "recoil";
 
 import { store } from "../lib/config";
 
@@ -6,30 +6,6 @@ import type { AtomEffect } from "recoil";
 
 // Utils
 type TauriStoreEffect = <T>(key: string) => AtomEffect<T>;
-
-// const tauriStoreEffect: TauriStoreEffect =
-//   (key: string) =>
-//   ({ setSelf, onSet, trigger }) => {
-//     // If there's a persisted value - set it on load
-//     const loadPersisted = async () => {
-//       // TODO: type
-//       const savedValue: any = await store.get(key);
-//
-//       if (savedValue != null) {
-//         setSelf(savedValue);
-//       }
-//     };
-//
-//     // Asynchronously set the persisted data
-//     if (trigger === "get") {
-//       loadPersisted();
-//     }
-//
-//     // Subscribe to state changes and persist them to tauri store
-//     onSet((newValue, _, isReset) => {
-//       isReset ? store.delete(key) : store.set(key, newValue);
-//     });
-//   };
 
 const tauriStoreEffect: TauriStoreEffect =
   (key: string) =>
@@ -52,7 +28,7 @@ const tauriStoreEffect: TauriStoreEffect =
 // Atoms
 
 // Editor
-export const targetFileState = atom<string>({
+export const targetFileState = atom({
   key: "editor/file-name",
   default: "",
   effects: [tauriStoreEffect("target-file")],
@@ -106,6 +82,7 @@ export const isOsColorModeState = atom({
   effects: [tauriStoreEffect("is-os-color-mode")],
 });
 
+// TODO: type ColorMode
 export const colorModeState = atom({
   key: "config/color-mode",
   default: "light",

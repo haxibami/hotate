@@ -4,8 +4,6 @@ import { Range, Form, Toggle } from "react-daisyui";
 
 import { useRecoilState } from "recoil";
 
-import * as Svg from "../../components/Svg";
-
 import {
   lineWordsState,
   lineHeightState,

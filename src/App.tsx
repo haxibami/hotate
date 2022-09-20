@@ -1,7 +1,5 @@
 import { readTextFile } from "@tauri-apps/api/fs";
 
-import { useState, useEffect, useRef } from "react";
-
 import { Drawer } from "react-daisyui";
 
 import { LexicalComposer } from "@lexical/react/LexicalComposer";
@@ -10,7 +8,6 @@ import { useRecoilState, useRecoilValue } from "recoil";
 
 import Editor from "./components/Editor";
 import Setting from "./components/Setting";
-import TextModal from "./components/TextModal";
 import { $setTextContent } from "./lib/fs";
 import { useData } from "./lib/suspense";
 import { isDrawerOpenState, targetFileState } from "./store";

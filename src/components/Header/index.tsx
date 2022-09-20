@@ -1,7 +1,8 @@
 import { getName, getVersion, getTauriVersion } from "@tauri-apps/api/app";
 import { message } from "@tauri-apps/api/dialog";
 import { arch, platform } from "@tauri-apps/api/os";
-import { open } from "@tauri-apps/api/shell";
+import { appWindow } from "@tauri-apps/api/window";
+// import { open } from "@tauri-apps/api/shell";
 
 import { useState } from "react";
 import type { FC } from "react";
@@ -191,6 +192,10 @@ const Header: FC = () => {
                 <Dropdown.Item onClick={() => setIsDrawerOpen(!isDrawerOpen)}>
                   <Svg.Gear className="inline-block h-4 w-4 fill-current stroke-current" />
                   設定
+                </Dropdown.Item>
+                <Dropdown.Item onClick={async () => await appWindow.close()}>
+                  <Svg.Xmark className="inline-block h-4 w-4 fill-current stroke-current" />
+                  終了
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
