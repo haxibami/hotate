@@ -1,5 +1,9 @@
 name: "test-on-pr"
-on: [pull_request]
+on:
+  pull_request:
+  push:
+    branches:
+      - "main"
 
 env:
   node-version: 16
@@ -18,26 +22,34 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v3
         with:
-          node-version:
-            ${{ env.node-version }}
-            #       - name: Cache pnpm modules
-            #         uses: actions/cache@v3
-            #         with:
-            #           path: |
-            #             ~/.pnpm-store
-            #           key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-            #           restore-keys: |
-            #             ${{ runner.os }}-
+          node-version: ${{ env.node-version }}
       - name: Install pnpm
         uses: pnpm/action-setup@v2.2.2
         with:
           version: ${{ env.pnpm-version }}
-          run_install: |
-            - recursive: true
+          run_install: false
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      - name: Install node dependencies
+        run: pnpm install
       - name: install Rust stable
         uses: actions-rs/toolchain@v1
         with:
+          profile: minimal
           toolchain: stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: "src-tauri -> target"
+          cache-on-failure: true
       - name: install dependencies (ubuntu only)
         if: matrix.platform == 'ubuntu-20.04'
         run: |

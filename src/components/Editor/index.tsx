@@ -23,7 +23,7 @@ import {
   lineHeightState,
   fontSizeState,
   textLengthState,
-  targetFileState,
+  // targetFileState,
   // isEditableState,
 } from "../../store";
 
@@ -43,7 +43,7 @@ const Editor = () => {
   const lw = useRecoilValue(lineWordsState);
 
   const [editor] = useLexicalComposerContext();
-  const [targetFile] = useRecoilValue(targetFileState);
+  // const [targetFile] = useRecoilValue(targetFileState);
 
   const isLineNumOn = useRecoilValue(isLineNumOnState);
   const lineHeight = useRecoilValue(lineHeightState);

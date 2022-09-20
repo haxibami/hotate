@@ -1,7 +1,7 @@
 {
   "name": "hotate",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,9 @@
     "preview": "vite preview",
     "tauri": "tauri",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'"
+    "lint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
+    "format": "prettier --check 'src/**/*.{js,jsx,ts,tsx}'",
+    "format-fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
     "@lexical/react": "0.4.1",
