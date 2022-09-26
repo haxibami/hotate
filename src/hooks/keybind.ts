@@ -6,7 +6,6 @@ import type { TextFormatType, LexicalEditor } from "lexical";
 import {
   $getSelection,
   $isRangeSelection,
-  $isGridSelection,
   KEY_ARROW_DOWN_COMMAND,
   KEY_ARROW_UP_COMMAND,
   KEY_ARROW_LEFT_COMMAND,
@@ -128,7 +127,7 @@ export function useKeybind(editor: LexicalEditor): void {
         PASTE_COMMAND,
         (event) => {
           const selection = $getSelection();
-          if ($isRangeSelection(selection) || $isGridSelection(selection)) {
+          if ($isRangeSelection(selection)) {
             onPasteForRichText(event, editor);
             return true;
           }

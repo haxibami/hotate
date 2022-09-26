@@ -103,6 +103,7 @@ const Editor = () => {
         <HistoryPlugin />
         <OnChangePlugin onChange={onChange} ignoreSelectionChange={true} />
         <InitPlugin />
+        {/* for debug */}
         {/*<TreeView
           viewClassName="tree-view-output"
           timeTravelPanelClassName="debug-timetravel-panel"
