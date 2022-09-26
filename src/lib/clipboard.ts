@@ -5,7 +5,7 @@ import type {
   CommandPayloadType,
   LexicalEditor,
 } from "lexical";
-import { $getSelection, $isRangeSelection, $isGridSelection } from "lexical";
+import { $getSelection, $isRangeSelection } from "lexical";
 
 // All pasted text is treated as multi-line plain text
 function $insertDataTransferForNovelText(
@@ -42,11 +42,10 @@ export function onPasteForRichText(
     () => {
       const selection = $getSelection();
       const clipboardData =
-        event instanceof InputEvent ? null : event.clipboardData;
-      if (
-        clipboardData != null &&
-        ($isRangeSelection(selection) || $isGridSelection(selection))
-      ) {
+        event instanceof InputEvent || event instanceof KeyboardEvent
+          ? null
+          : event.clipboardData;
+      if (clipboardData != null && $isRangeSelection(selection)) {
         $insertDataTransferForNovelText(clipboardData, selection);
       }
     },

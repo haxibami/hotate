@@ -62,11 +62,17 @@ export const getSaveFilePath = async () => {
 
 export const silentSave = async (editor: LexicalEditor, filePath: string) => {
   // TODO: check whether file exists
-  // since we show text in rich editor, we need to convert paragraph to line
+  // TODO: improve text extraction logic
+  // since we show plain text in rich editor mode, we need to convert each paragraph to line
   const text = editor
     .getEditorState()
-    .read(() => $getRoot().getTextContent(true, false))
-    .replace(/\n\n/g, "\n");
+    .read(() =>
+      $getRoot()
+        .getChildren()
+        .map((n) => n.getTextContent())
+    )
+    .join("\n");
+  // TODO: check if we can correctly handle linebreak
   await writeTextFile(filePath, `${text}\n`);
   // return filePath;
 };
