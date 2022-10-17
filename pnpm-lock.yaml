@@ -26,7 +26,7 @@ specifiers:
   react: 18.2.0
   react-daisyui: 2.4.2
   react-dom: 18.2.0
-  recoil: 0.7.5
+  recoil: 0.7.6
   tailwindcss: 3.1.8
   tauri-plugin-store-api: github:tauri-apps/tauri-plugin-store#dev
   typescript: 4.8.4
@@ -40,7 +40,7 @@ dependencies:
   lexical: 0.5.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  recoil: 0.7.5_biqbaboplfbrettd7655fr4n2y
+  recoil: 0.7.6_biqbaboplfbrettd7655fr4n2y
   tauri-plugin-store-api: github.com/tauri-apps/tauri-plugin-store/4326f75446b8b9e0cb9904c65f258b81e23e544e
 
 devDependencies:
@@ -2684,8 +2684,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /recoil/0.7.5_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-GVShsj5+M/2GULWBs5WBJGcsNis/d3YvDiaKjYh3mLKXftjtmk9kfaQ8jwjoIXySCwn8/RhgJ4Sshwgzj2UpFA==}
+  /recoil/0.7.6_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-hsBEw7jFdpBCY/tu2GweiyaqHKxVj6EqF2/SfrglbKvJHhpN57SANWvPW+gE90i3Awi+A5gssOd3u+vWlT+g7g==}
     peerDependencies:
       react: '>=16.13.1'
       react-dom: '*'
