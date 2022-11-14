@@ -14,7 +14,7 @@ specifiers:
   '@typescript-eslint/parser': 5.42.1
   '@vitejs/plugin-react': 2.2.0
   autoprefixer: 10.4.13
-  daisyui: 2.39.1
+  daisyui: 2.40.1
   eslint: 8.27.0
   eslint-config-prettier: 8.5.0
   eslint-plugin-import: 2.26.0
@@ -53,7 +53,7 @@ devDependencies:
   '@typescript-eslint/parser': 5.42.1_rmayb2veg2btbq6mbmnyivgasy
   '@vitejs/plugin-react': 2.2.0_vite@3.2.3
   autoprefixer: 10.4.13_postcss@8.4.19
-  daisyui: 2.39.1_2lwn2upnx27dqeg6hqdu7sq75m
+  daisyui: 2.40.1_2lwn2upnx27dqeg6hqdu7sq75m
   eslint: 8.27.0
   eslint-config-prettier: 8.5.0_eslint@8.27.0
   eslint-plugin-import: 2.26.0_jnohwm7eexgw7uduhweedcbnpe
@@ -61,7 +61,7 @@ devDependencies:
   postcss: 8.4.19
   prettier: 2.7.1
   prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
-  react-daisyui: 2.4.6_sl6es4z46gq3ebmrwuc55cqely
+  react-daisyui: 2.4.6_uda76ohzwt4i7mudv4iouywwq4
   tailwindcss: 3.2.4_postcss@8.4.19
   typescript: 4.8.4
   vite: 3.2.3_@types+node@18.11.9
@@ -1262,8 +1262,8 @@ packages:
     resolution: {integrity: sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==}
     dev: true
 
-  /daisyui/2.39.1_2lwn2upnx27dqeg6hqdu7sq75m:
-    resolution: {integrity: sha512-J7goHjiQ6zk7irpKJ0HyElAuWF+x8iGoebQ1IfHM6BuvKoGSOcfZC/bedTultsX2Co5XARsE+qvE7BI1amUtsQ==}
+  /daisyui/2.40.1_2lwn2upnx27dqeg6hqdu7sq75m:
+    resolution: {integrity: sha512-nzLpcU8kCLU4zoMQ0hUKw1orRRn2x/LJLZenIsHF+UlGVsml02U4u20nb/knN7B06MPpDZ4RAZyp0rEp67iwzQ==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
@@ -2655,7 +2655,7 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /react-daisyui/2.4.6_sl6es4z46gq3ebmrwuc55cqely:
+  /react-daisyui/2.4.6_uda76ohzwt4i7mudv4iouywwq4:
     resolution: {integrity: sha512-T1BoSwVjy6hbmwDRy1eikE6vBIWRfLam60uyyXuC807cji3WZK6YBEoi8NxeoUuWVWmNbzC3CDjZ7+FFleYQxg==}
     peerDependencies:
       daisyui: ^2.24.0
@@ -2663,7 +2663,7 @@ packages:
       react-dom: '>=16'
       tailwindcss: ^3.0.23
     dependencies:
-      daisyui: 2.39.1_2lwn2upnx27dqeg6hqdu7sq75m
+      daisyui: 2.40.1_2lwn2upnx27dqeg6hqdu7sq75m
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       tailwindcss: 3.2.4_postcss@8.4.19
