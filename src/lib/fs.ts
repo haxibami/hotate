@@ -79,6 +79,8 @@ export const silentSave = async (editor: LexicalEditor, filePath: string) => {
 
 export const askandSave = async (editor: LexicalEditor) => {
   const filePath = await getSaveFilePath();
-  await silentSave(editor, filePath);
-  return filePath;
+  if (filePath) {
+    await silentSave(editor, filePath);
+  }
+  return filePath ?? "";
 };
