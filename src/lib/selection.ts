@@ -16,7 +16,6 @@ type TextPointType = {
   _selection: RangeSelection | GridSelection;
   getNode: () => TextNode;
   is: (point: PointType) => boolean;
-  isAtNodeEnd: () => boolean;
   isBefore: (point: PointType) => boolean;
   key: NodeKey;
   offset: number;
@@ -28,7 +27,6 @@ type ElementPointType = {
   _selection: RangeSelection | GridSelection;
   getNode: () => ElementNode;
   is: (point: PointType) => boolean;
-  isAtNodeEnd: () => boolean;
   isBefore: (point: PointType) => boolean;
   key: NodeKey;
   offset: number;
