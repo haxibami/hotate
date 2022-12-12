@@ -1,7 +1,7 @@
 import {
   $isTextNode,
   $isElementNode,
-  $getDecoratorNode,
+  $getAdjacentNode,
   $isDecoratorNode,
 } from "lexical";
 import type {
@@ -82,7 +82,7 @@ function $modifyLineSelection(
 
   // Handle the selection movement around decorators.
   // TODO: remove decorator logic
-  const possibleNode = $getDecoratorNode(focus, isBackward);
+  const possibleNode = $getAdjacentNode(focus, isBackward);
   if ($isDecoratorNode(possibleNode) && !possibleNode.isIsolated()) {
     const sibling = isBackward
       ? possibleNode.getPreviousSibling()
