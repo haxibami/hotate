@@ -14,11 +14,11 @@
     "format-fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
-    "@lexical/react": "0.7.1",
-    "@lexical/selection": "0.7.1",
-    "@lexical/utils": "0.7.1",
+    "@lexical/react": "0.7.3",
+    "@lexical/selection": "0.7.3",
+    "@lexical/utils": "0.7.3",
     "@tauri-apps/api": "1.2.0",
-    "lexical": "0.7.1",
+    "lexical": "0.7.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "recoil": "0.7.6",
