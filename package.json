@@ -14,8 +14,7 @@
     "format-fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
   },
   "engines": {
-    "pnpm": ">=7.0.0",
-    "yarn": ">=1.22.0"
+    "pnpm": ">=7.0.0"
   },
   "dependencies": {
     "@lexical/react": "0.7.3",
