@@ -62,7 +62,7 @@ devDependencies:
   prettier: 2.8.1
   prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.1
   react-daisyui: 2.5.0_zc4vks3bswklytiqoinqj2eb6e
-  tailwindcss: 3.2.4_postcss@8.4.20
+  tailwindcss: 3.2.4
   typescript: 4.9.4
   vite: 4.0.2_@types+node@18.11.17
 
@@ -826,7 +826,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.2.4_postcss@8.4.20
+      tailwindcss: 3.2.4
     dev: true
 
   /@tauri-apps/api/1.1.0:
@@ -1439,7 +1439,7 @@ packages:
       css-selector-tokenizer: 0.8.0
       postcss: 8.4.20
       postcss-js: 4.0.0_postcss@8.4.20
-      tailwindcss: 3.2.4_postcss@8.4.20
+      tailwindcss: 3.2.4
     transitivePeerDependencies:
       - ts-node
     dev: true
@@ -2715,7 +2715,7 @@ packages:
       daisyui: 2.45.0_r4gnkvssmvyxmi2wmat5xbx36a
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      tailwindcss: 3.2.4_postcss@8.4.20
+      tailwindcss: 3.2.4
     dev: true
 
   /react-dom/18.2.0_react@18.2.0:
@@ -2980,12 +2980,10 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /tailwindcss/3.2.4_postcss@8.4.20:
+  /tailwindcss/3.2.4:
     resolution: {integrity: sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
-    peerDependencies:
-      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
