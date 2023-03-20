@@ -43,7 +43,7 @@
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-react": "7.32.2",
     "postcss": "8.4.21",
-    "prettier": "2.8.4",
+    "prettier": "2.8.5",
     "prettier-plugin-tailwindcss": "0.2.5",
     "react-daisyui": "3.0.3",
     "tailwindcss": "3.2.7",
