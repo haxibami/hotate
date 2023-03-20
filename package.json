@@ -47,7 +47,7 @@
     "prettier-plugin-tailwindcss": "0.2.5",
     "react-daisyui": "3.0.3",
     "tailwindcss": "3.2.7",
-    "typescript": "4.9.5",
+    "typescript": "5.0.2",
     "vite": "4.2.0"
   }
 }
