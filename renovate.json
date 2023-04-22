@@ -10,11 +10,6 @@
   ],
   "dependencyDashboard": true,
   "ignoreDeps": [],
-  "force": {
-    "constraints": {
-      "pnpm": "7.19.0"
-    }
-  },
   "packageRules": [
     {
       "groupName": "tauri-backend",
