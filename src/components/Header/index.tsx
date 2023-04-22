@@ -172,7 +172,7 @@ const Header: FC = () => {
       <Navbar className="min-h-[3rem] gap-2 border-b-2 border-b-base-200 opacity-0 transition-opacity duration-1000 ease-out hover:opacity-100">
         <div className="flex flex-1 justify-start gap-2">
           <div>
-            <Dropdown horizontal="right" vertical="middle">
+            <Dropdown horizontal="right">
               <Dropdown.Toggle color="ghost" size="sm">
                 <Svg.Bars className="inline-block h-5 w-5 fill-current stroke-current" />
               </Dropdown.Toggle>
@@ -235,7 +235,7 @@ const Header: FC = () => {
         </div>
         <div className="flex flex-1 justify-end">
           <div>
-            <Dropdown horizontal="left" vertical="middle">
+            <Dropdown horizontal="left">
               <Dropdown.Toggle color="ghost" size="sm">
                 <Svg.Ellipsis className="inline-block h-5 w-5 fill-current stroke-current" />
               </Dropdown.Toggle>
