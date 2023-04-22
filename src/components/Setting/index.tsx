@@ -88,7 +88,7 @@ const Setting = () => {
           <div className="flex justify-between">
             <span className="text-sm">行文字数</span>
           </div>
-          <div className=" tooltip tooltip-open" data-tip={lineWords}>
+          <div className=" tooltip-open tooltip" data-tip={lineWords}>
             <Range
               min={20}
               max={40}
@@ -103,7 +103,7 @@ const Setting = () => {
           <div className="flex justify-between">
             <span className="text-sm">行間</span>
           </div>
-          <div className=" tooltip tooltip-open" data-tip={lineHeight}>
+          <div className=" tooltip-open tooltip" data-tip={lineHeight}>
             <Range
               min={15}
               max={25}
@@ -118,7 +118,7 @@ const Setting = () => {
           <div className="flex justify-between">
             <span className="text-sm">文字サイズ</span>
           </div>
-          <div className=" tooltip tooltip-open" data-tip={fontSize}>
+          <div className=" tooltip-open tooltip" data-tip={fontSize}>
             <Range
               min={5}
               max={15}

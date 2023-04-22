@@ -81,7 +81,7 @@ const Editor = () => {
       <Header />
       <div className={`w-3/4`}>
         <div
-          className="scrollbar relative w-full overflow-x-auto overflow-y-hidden pt-14 pb-14"
+          className="scrollbar relative w-full overflow-x-auto overflow-y-hidden pb-14 pt-14"
           ref={containerRef}
           onWheel={handleWheel}
         >
@@ -93,7 +93,7 @@ const Editor = () => {
               />
             }
             placeholder={
-              <div className="vertical placeholder pointer-events-none absolute top-14 right-0 select-none font-serif text-slate-400">
+              <div className="vertical placeholder pointer-events-none absolute right-0 top-14 select-none font-serif text-slate-400">
                 {PLACEHOLDER_CONTENT}
               </div>
             }
