@@ -30,8 +30,8 @@ dependencies:
     specifier: 0.7.7
     version: 0.7.7(react-dom@18.2.0)(react@18.2.0)
   tauri-plugin-store-api:
-    specifier: github:tauri-apps/tauri-plugin-store#dev
-    version: github.com/tauri-apps/tauri-plugin-store/f4ef29684e4a32eddf51befaae98a5e498df8574
+    specifier: github:tauri-apps/tauri-plugin-store#v1
+    version: github.com/tauri-apps/tauri-plugin-store/1467ba770623ab1d41d825841c3d9435d9eaa0f1
 
 devDependencies:
   '@tailwindcss/typography':
@@ -3228,8 +3228,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/tauri-apps/tauri-plugin-store/f4ef29684e4a32eddf51befaae98a5e498df8574:
-    resolution: {tarball: https://codeload.github.com/tauri-apps/tauri-plugin-store/tar.gz/f4ef29684e4a32eddf51befaae98a5e498df8574}
+  github.com/tauri-apps/tauri-plugin-store/1467ba770623ab1d41d825841c3d9435d9eaa0f1:
+    resolution: {tarball: https://codeload.github.com/tauri-apps/tauri-plugin-store/tar.gz/1467ba770623ab1d41d825841c3d9435d9eaa0f1}
     name: tauri-plugin-store-api
     version: 0.0.0
     dependencies:
