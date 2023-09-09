@@ -1,3 +1,5 @@
+import { exists } from "@tauri-apps/api/fs";
+
 import { atom, DefaultValue } from "recoil";
 
 import { store } from "../lib/config";
@@ -25,13 +27,23 @@ const tauriStoreEffect: TauriStoreEffect =
     });
   };
 
+const fileExistsEffect: TauriStoreEffect =
+  (key: string) =>
+  ({ setSelf }) => {
+    setSelf(
+      store.get(key).then(
+        async (savedValue: any) => await exists(savedValue) ? savedValue : new DefaultValue()
+      )
+    );
+  };
+
 // Atoms
 
 // Editor
 export const targetFileState = atom({
   key: "editor/file-name",
   default: "",
-  effects: [tauriStoreEffect("target-file")],
+  effects: [tauriStoreEffect("target-file"), fileExistsEffect("target-file")],
 });
 
 export const textLengthState = atom({
