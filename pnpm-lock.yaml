@@ -86,8 +86,8 @@ devDependencies:
     specifier: 0.5.7
     version: 0.5.7(prettier@3.1.0)
   react-daisyui:
-    specifier: 4.1.2
-    version: 4.1.2(daisyui@4.4.10)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.5)
+    specifier: 5.0.0
+    version: 5.0.0(daisyui@4.4.10)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.5)
   tailwindcss:
     specifier: 3.3.5
     version: 3.3.5
@@ -3094,10 +3094,10 @@ packages:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
 
-  /react-daisyui@4.1.2(daisyui@4.4.10)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.5):
-    resolution: {integrity: sha512-Sx8ziaxKDe/59bw+UxTFOoDSJEuA8iGhgmMbzSAtnhaaZPP20kluHG+1/wY5mBSxfcAuk6oI8fqKcJRp55WzPQ==}
+  /react-daisyui@5.0.0(daisyui@4.4.10)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.5):
+    resolution: {integrity: sha512-j1cugAxALmIbihycGBh7P9H3UXrfsvqu84qM6O55l7nOKST43IjUkZjmNav/7s0ZaUpa9Y+52mFchUb2zvon1A==}
     peerDependencies:
-      daisyui: ^3.0.22
+      daisyui: ^4.4.6
       react: '>=16'
       react-dom: '>=16'
       tailwindcss: '>=3.2.7'
