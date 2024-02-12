@@ -62,8 +62,8 @@ devDependencies:
     specifier: 10.4.17
     version: 10.4.17(postcss@8.4.35)
   daisyui:
-    specifier: 4.6.2
-    version: 4.6.2(postcss@8.4.35)
+    specifier: 4.6.3
+    version: 4.6.3(postcss@8.4.35)
   eslint:
     specifier: 8.56.0
     version: 8.56.0
@@ -87,7 +87,7 @@ devDependencies:
     version: 0.5.11(prettier@3.2.5)
   react-daisyui:
     specifier: 5.0.0
-    version: 5.0.0(daisyui@4.6.2)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.4.1)
+    version: 5.0.0(daisyui@4.6.3)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.4.1)
   tailwindcss:
     specifier: 3.4.1
     version: 3.4.1
@@ -1707,8 +1707,8 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dev: true
 
-  /daisyui@4.6.2(postcss@8.4.35):
-    resolution: {integrity: sha512-LBIbI76wVVRCQt1Uis2Y2/PRdGfMkNMFsHOjfpav8n7SamwRwPOCiNUClIrnX2jerWW3mLZlzRMCnQfxmGEjow==}
+  /daisyui@4.6.3(postcss@8.4.35):
+    resolution: {integrity: sha512-0Y8G0EwO1aQlvhasDuUAYH35XCK/808dwYdkT4VqQ2kqtErcd/MFaHqK4CGhXwf6PWsWImmIpotFehWkUrlxnw==}
     engines: {node: '>=16.9.0'}
     dependencies:
       css-selector-tokenizer: 0.8.0
@@ -3129,7 +3129,7 @@ packages:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
 
-  /react-daisyui@5.0.0(daisyui@4.6.2)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.4.1):
+  /react-daisyui@5.0.0(daisyui@4.6.3)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.4.1):
     resolution: {integrity: sha512-j1cugAxALmIbihycGBh7P9H3UXrfsvqu84qM6O55l7nOKST43IjUkZjmNav/7s0ZaUpa9Y+52mFchUb2zvon1A==}
     peerDependencies:
       daisyui: ^4.4.6
@@ -3137,7 +3137,7 @@ packages:
       react-dom: '>=16'
       tailwindcss: '>=3.2.7'
     dependencies:
-      daisyui: 4.6.2(postcss@8.4.35)
+      daisyui: 4.6.3(postcss@8.4.35)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       tailwindcss: 3.4.1
