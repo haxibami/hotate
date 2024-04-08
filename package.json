@@ -30,14 +30,14 @@
   "devDependencies": {
     "@tailwindcss/typography": "0.5.12",
     "@tauri-apps/cli": "1.5.11",
-    "@types/node": "20.12.2",
-    "@types/react": "18.2.73",
-    "@types/react-dom": "18.2.23",
-    "@typescript-eslint/eslint-plugin": "7.4.0",
-    "@typescript-eslint/parser": "7.4.0",
+    "@types/node": "20.12.5",
+    "@types/react": "18.2.74",
+    "@types/react-dom": "18.2.24",
+    "@typescript-eslint/eslint-plugin": "7.5.0",
+    "@typescript-eslint/parser": "7.5.0",
     "@vitejs/plugin-react": "4.2.1",
     "autoprefixer": "10.4.19",
-    "daisyui": "4.9.0",
+    "daisyui": "4.10.1",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.1",
@@ -47,7 +47,7 @@
     "prettier-plugin-tailwindcss": "0.5.13",
     "react-daisyui": "5.0.0",
     "tailwindcss": "3.4.3",
-    "typescript": "5.4.3",
-    "vite": "5.2.7"
+    "typescript": "5.4.4",
+    "vite": "5.2.8"
   }
 }
