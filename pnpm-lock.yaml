@@ -15,8 +15,8 @@ dependencies:
     specifier: 0.12.4
     version: 0.12.4(lexical@0.12.4)
   '@tauri-apps/api':
-    specifier: 1.5.1
-    version: 1.5.1
+    specifier: 2.0.3
+    version: 2.0.3
   lexical:
     specifier: 0.12.4
     version: 0.12.4
@@ -1071,9 +1071,8 @@ packages:
     engines: {node: '>= 14.6.0', npm: '>= 6.6.0', yarn: '>= 1.19.1'}
     dev: false
 
-  /@tauri-apps/api@1.5.1:
-    resolution: {integrity: sha512-6unsZDOdlXTmauU3NhWhn+Cx0rODV+rvNvTdvolE5Kls5ybA6cqndQENDt1+FS0tF7ozCP66jwWoH6a5h90BrA==}
-    engines: {node: '>= 14.6.0', npm: '>= 6.6.0', yarn: '>= 1.19.1'}
+  /@tauri-apps/api@2.0.3:
+    resolution: {integrity: sha512-840qk6n8rbXBXMA5/aAgTYsg5JAubKO0nXw5wf7IzGnUuYKGbB4oFBIZtXOIWy+E0kNTDI3qhq5iqsoMJfwp8g==}
     dev: false
 
   /@tauri-apps/cli-darwin-arm64@1.6.2:
