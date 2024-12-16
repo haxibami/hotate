@@ -31,7 +31,7 @@
     "@tailwindcss/typography": "0.5.15",
     "@tauri-apps/cli": "1.6.3",
     "@types/node": "20.17.10",
-    "@types/react": "18.3.16",
+    "@types/react": "18.3.17",
     "@types/react-dom": "18.3.5",
     "@typescript-eslint/eslint-plugin": "8.18.0",
     "@typescript-eslint/parser": "8.18.0",
