@@ -21,7 +21,7 @@ jobs:
       - name: Setup mold linker
         uses: rui314/setup-mold@v1
       - name: Setup node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: ${{ env.node-version }}
       - name: Install pnpm
