@@ -80,11 +80,11 @@ devDependencies:
     specifier: 8.5.6
     version: 8.5.6
   prettier:
-    specifier: 3.6.2
-    version: 3.6.2
+    specifier: 3.7.3
+    version: 3.7.3
   prettier-plugin-tailwindcss:
     specifier: 0.7.1
-    version: 0.7.1(prettier@3.6.2)
+    version: 0.7.1(prettier@3.7.3)
   react-daisyui:
     specifier: 5.0.5
     version: 5.0.5(daisyui@4.12.24)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.4.18)
@@ -3345,7 +3345,7 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-tailwindcss@0.7.1(prettier@3.6.2):
+  /prettier-plugin-tailwindcss@0.7.1(prettier@3.7.3):
     resolution: {integrity: sha512-Bzv1LZcuiR1Sk02iJTS1QzlFNp/o5l2p3xkopwOrbPmtMeh3fK9rVW5M3neBQzHq+kGKj/4LGQMTNcTH4NGPtQ==}
     engines: {node: '>=20.19'}
     peerDependencies:
@@ -3400,11 +3400,11 @@ packages:
       prettier-plugin-svelte:
         optional: true
     dependencies:
-      prettier: 3.6.2
+      prettier: 3.7.3
     dev: true
 
-  /prettier@3.6.2:
-    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
+  /prettier@3.7.3:
+    resolution: {integrity: sha512-QgODejq9K3OzoBbuyobZlUhznP5SKwPqp+6Q6xw6o8gnhr4O85L2U915iM2IDcfF2NPXVaM9zlo9tdwipnYwzg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
