@@ -41,14 +41,14 @@ devDependencies:
     specifier: 1.6.3
     version: 1.6.3
   '@types/node':
-    specifier: 20.19.30
-    version: 20.19.30
+    specifier: 20.19.33
+    version: 20.19.33
   '@types/react':
-    specifier: 18.3.27
-    version: 18.3.27
+    specifier: 18.3.28
+    version: 18.3.28
   '@types/react-dom':
     specifier: 18.3.7
-    version: 18.3.7(@types/react@18.3.27)
+    version: 18.3.7(@types/react@18.3.28)
   '@typescript-eslint/eslint-plugin':
     specifier: 8.54.0
     version: 8.54.0(@typescript-eslint/parser@8.54.0)(eslint@9.39.2)(typescript@5.9.3)
@@ -96,7 +96,7 @@ devDependencies:
     version: 5.9.3
   vite:
     specifier: 5.4.21
-    version: 5.4.21(@types/node@20.19.30)
+    version: 5.4.21(@types/node@20.19.33)
 
 packages:
 
@@ -1252,8 +1252,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node@20.19.30:
-    resolution: {integrity: sha512-WJtwWJu7UdlvzEAUm484QNg5eAoq5QR08KDNx7g45Usrs2NtOPiX8ugDqmKdXkyL03rBqU5dYNYVQetEpBHq2g==}
+  /@types/node@20.19.33:
+    resolution: {integrity: sha512-Rs1bVAIdBs5gbTIKza/tgpMuG1k3U/UMJLWecIMxNdJFDMzcM5LOiLVRYh3PilWEYDIeUDv7bpiHPLPsbydGcw==}
     dependencies:
       undici-types: 6.21.0
     dev: true
@@ -1262,16 +1262,16 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react-dom@18.3.7(@types/react@18.3.27):
+  /@types/react-dom@18.3.7(@types/react@18.3.28):
     resolution: {integrity: sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==}
     peerDependencies:
       '@types/react': ^18.0.0
     dependencies:
-      '@types/react': 18.3.27
+      '@types/react': 18.3.28
     dev: true
 
-  /@types/react@18.3.27:
-    resolution: {integrity: sha512-cisd7gxkzjBKU2GgdYrTdtQx1SORymWyaAFhaxQPK9bYO9ot3Y5OikQRvY0VYQtvwjeQnizCINJAenh/V7MK2w==}
+  /@types/react@18.3.28:
+    resolution: {integrity: sha512-z9VXpC7MWrhfWipitjNdgCauoMLRdIILQsAEV+ZesIzBq/oUlxk0m3ApZuMFCXdnS4U7KrI+l3WRUEGQ8K1QKw==}
     dependencies:
       '@types/prop-types': 15.7.5
       csstype: 3.2.3
@@ -1429,7 +1429,7 @@ packages:
       '@rolldown/pluginutils': 1.0.0-beta.27
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 5.4.21(@types/node@20.19.30)
+      vite: 5.4.21(@types/node@20.19.33)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4052,7 +4052,7 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vite@5.4.21(@types/node@20.19.30):
+  /vite@5.4.21(@types/node@20.19.33):
     resolution: {integrity: sha512-o5a9xKjbtuhY6Bi5S3+HvbRERmouabWbyUcpXXUA1u+GNUKoROi9byOJ8M0nHbHYHkYICiMlqxkg1KkYmm25Sw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -4083,7 +4083,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.19.30
+      '@types/node': 20.19.33
       esbuild: 0.21.5
       postcss: 8.5.6
       rollup: 4.21.0
